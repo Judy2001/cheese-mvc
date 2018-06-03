@@ -5,9 +5,19 @@ public class Cheese {
     private String name;
     private String description;
     private int cheeseId;
+
+    public int getCheeseId() {
+        return cheeseId;
+    }
+
+    public void setCheeseId(int cheeseId) {
+        this.cheeseId = cheeseId;
+    }
+
     private static int nextId = 1;
 
     public Cheese(String name, String description) {
+        this();
         this.name = name;
         this.description = description;
     }
