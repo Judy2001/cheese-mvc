@@ -6,13 +6,6 @@ public class Cheese {
     private String description;
     private int cheeseId;
 
-    public int getCheeseId() {
-        return cheeseId;
-    }
-
-    public void setCheeseId(int cheeseId) {
-        this.cheeseId = cheeseId;
-    }
 
     private static int nextId = 1;
 
@@ -25,6 +18,14 @@ public class Cheese {
     public Cheese() {
         cheeseId = nextId;
         nextId++;
+    }
+
+    public int getCheeseId() {
+        return cheeseId;
+    }
+
+    public void setCheeseId(int cheeseId) {
+        this.cheeseId = cheeseId;
     }
 
     public String getName() {
